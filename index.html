@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <!-- <h1>To-Do List</h1> -->
+        <div id="animated_div">To-do list</div>
+        <div style="display: flex; justify-content: space-between;">
+            <div class="is_empty" style="margin-left: 25px;"></div>
+            <div class="position" style="margin-left: 25px;"></div>
+            <div class="sorting">
+                <!-- <img class="sort" src="/assets/images/sort_down_passiv.png" data-value="1" /> -->
+                <img class="sort" src="" data-value="" />
+            </div>
+        </div>
+        <div class="todos">
+            <label class="first">
+                <input required type="text" placeholder="Your to do" value="first"/>
+                <img class="xicon" src="/assets/images/x_passiv.png" width="20px" height="20px" />
+            </label>
+            <label>
+                <img class="rows_move" src="/assets/images/menu-icon-3-lines.png" />
+                <input type="text" value="my first to do" />
+                <img class="xicon" src="/assets/images/x_passiv.png" width="20px" height="20px" />
+                <span class="datetime" hidden>27.11.2022 18:06</span>
+            </label>
+        </div>
+        <div class="add">
+            <!-- <div class="add_plus">+</div> -->
+            <div class="plus"></div>
+            <div class="add_text"><span>Добавить</span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
