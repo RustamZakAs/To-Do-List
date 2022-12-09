@@ -61,11 +61,11 @@ h1 {
 .todos {
     border: 1px solid #C4C4C4;
     border-radius: 10px;
-    width: 90%;
+    width: 95%;
     margin: auto;
     margin-bottom: 11px;
     height: 68vh;
-    overflow: auto
+    overflow: auto;
 }
 
 .rows_move {
@@ -87,11 +87,24 @@ input {
     font-size: 1em;
 }
 
+.parent-moved {
+    background-color: red;
+    border: 1px solid maroon;
+    border-radius: 10px;
+}
+
 label {
     display: flex;
     justify-content: row;
     flex-wrap: nowrap;
     position: relative;
+    border: 1px solid black;
+    border-radius: 9.2px;
+    background-color: #C4C4C4;
+}
+
+label img {
+    cursor: pointer;
 }
 
 .xicon {
@@ -167,10 +180,10 @@ label {
       linear-gradient(#fff 0 0),
       linear-gradient(#fff 0 0),
       #9953F1;
-    background-position:center;
+    background-position: center;
     background-size: 50% 2px, 2px 50%; /*thickness = 2px, length = 50% (25px)*/
-    background-repeat:no-repeat;
-    border-radius:50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
 }
 
 #animated_div {
@@ -204,7 +217,8 @@ label {
         left: 0px;
     }
     25% {
-        transform: rotate(20deg);
+        /* transform: rotate(20deg); */
+        transform: rotate(0deg);
         left: 0px;
     }
     50% {
@@ -224,7 +238,8 @@ label {
         background: #1ec7e6;
     }
     100% {
-        transform: rotate(-360deg);
+        /* transform: rotate(-360deg); */
+        transform: rotate(0deg);
         left: 0px;
     }
 }
